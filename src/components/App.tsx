@@ -19,7 +19,7 @@ function App() {
   return (
     <ChakraProvider>
       <Box p="2" maxW={"1000px"} mx="auto" mt="20px">
-        <Flex gap="12">
+        <Flex gap="12" flexDirection={{ base: "column", md: "row" }}>
           <Box minW="30%">
             <TextComponent setPlayers={setPlayers} />
           </Box>

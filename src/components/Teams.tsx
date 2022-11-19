@@ -48,6 +48,7 @@ function Teams({ players }: { players: string[] }) {
             setPlayerNumber(newValue);
           }}
         />
+        <Button onClick={() => localStorage.clear()}>Clear</Button>
         <Button
           onClick={() => {
             const chunks = sliceIntoChunks(

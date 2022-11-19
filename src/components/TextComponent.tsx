@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Textarea, Box } from "@chakra-ui/react";
+import { useLocalStorage } from "./hooks";
 
 const defaultValue = `
 Pichanguita cumpleaños de Ario
@@ -37,7 +38,7 @@ function TextComponent({
 }: {
   setPlayers: (text: string[]) => void;
 }) {
-  const [value, setValue] = useState(defaultValue);
+  const [value, setValue] = useLocalStorage<string>("list", defaultValue);
 
   useEffect(() => {
     if (!value) return;

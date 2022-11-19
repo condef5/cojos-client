@@ -8,10 +8,20 @@ export function sliceIntoChunks(arr: any[], chunkSize: number) {
 }
 
 export function shuffleArray(array: any[]) {
+  if (!Array.isArray(array)) {
+    throw new TypeError(`Expected an array, got ${typeof array}`);
+  }
+
+  if (array.length === 0) return [];
+
   const arrayCopy = [...array];
-  for (let i = arrayCopy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * i + 1);
-    [arrayCopy[i], arrayCopy[j]] = [arrayCopy[j], arrayCopy[i]];
+
+  for (let index = arrayCopy.length - 1; index > 0; index--) {
+    const newIndex = Math.floor(Math.random() * (index + 1));
+    [arrayCopy[index], arrayCopy[newIndex]] = [
+      arrayCopy[newIndex],
+      arrayCopy[index],
+    ];
   }
 
   return arrayCopy;

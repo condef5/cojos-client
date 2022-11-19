@@ -3,35 +3,40 @@ import { Textarea, Box } from "@chakra-ui/react";
 import { useLocalStorage } from "./hooks";
 
 const defaultValue = `
-Pichanguita cumpleaños de Ario
+Pichanguita la veganza del bicho
 
 HORA:    9pm - 11pm
-DIA:        Viernes 11
-LUGAR:  Laureles
+DIA:        Viernes 17
+LUGAR:  Potokar campo grande
 
 1. Frank
-2. Ronaldo A.
+2. Alpaquitay
 3. Loloy
-4. Alpaquitay
-5. Reynaga
-6. Juan Campos
-7. Ronaldo el bicho
-8. Jhoan
-9. Luis G
-10. Anghelo
-11. Angel
-12. Lucho goo
-13. Bruce gooo
-14. Piero goooo
-15. Angel
-16. JP
-17. Jachinv
-18. Trejo
-19. Erick H
-20. Sandro
-21. Lucas
-22. Alanya
-23. Jhonny`;
+4.Ronaldo A.
+5. Harry
+6. Ronaldo el bicho
+7.lucho goo
+8. Trejo
+9. Alanya
+10.Reynaga
+11.jhoan
+12. Erick jr
+13. Bruce go
+14. Julio Gonzales
+15. Luis GP
+16. Glen
+17.Terry
+18. Jheyson sui
+19. Anghelo
+20. Julinho goo
+21.Erick H
+22. Manuel Bravo
+23. Luis Daniel
+24. G. Jara
+25. Cantaro
+26. Ricardo
+27. JP
+28. cato`;
 
 function TextComponent({
   setPlayers,

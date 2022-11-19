@@ -24,7 +24,10 @@ function Teams({ players }: { players: string[] }) {
         />
         <Button
           onClick={() => {
-            const chunks = sliceIntoChunks(shuffleArray(players), playerNumber);
+            const chunks = sliceIntoChunks(
+              shuffleArray(shuffleArray(players)),
+              playerNumber
+            );
             setGroups(chunks);
           }}
           leftIcon={<ShuffleIcon />}
